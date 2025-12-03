@@ -103,7 +103,7 @@ const ResultQualified: React.FC = () => {
 
                 {/* Dobra 4 */}
                 <section className="bg-black/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/20 flex flex-col md:flex-row items-center gap-8">
-                    <img src="https://picsum.photos/seed/adrianajuwer/200/200" alt="Adriana Juwer" className="w-48 h-48 rounded-full object-cover border-4 border-white flex-shrink-0" />
+                    <img src="/AdrianaJuwer.jpg" alt="Adriana Juwer" className="w-48 h-48 rounded-full object-cover border-4 border-white flex-shrink-0" />
                     <div>
                         <h3 className="text-xl font-semibold text-gray-200">Quem vai conduzir sua sessão:</h3>
                         <h2 className="text-4xl font-bold text-white mt-1">Adriana Juwer</h2>
