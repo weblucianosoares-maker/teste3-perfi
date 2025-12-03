@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useAppContext } from '../hooks/useAppContext';
 import { quizQuestions, answerScale } from '../constants';
@@ -8,21 +7,13 @@ const Quiz: React.FC = () => {
   const { completeQuiz } = useAppContext();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex) / quizQuestions.length) * 100;
 
   const handleAnswerSelect = (value: number) => {
-    setSelectedAnswer(value);
-  };
-
-  const handleNext = () => {
-    if (selectedAnswer === null) return;
-
-    const newAnswers = [...answers, { questionId: currentQuestion.id, value: selectedAnswer }];
+    const newAnswers = [...answers, { questionId: currentQuestion.id, value }];
     setAnswers(newAnswers);
-    setSelectedAnswer(null);
 
     if (currentQuestionIndex < quizQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -49,28 +40,16 @@ const Quiz: React.FC = () => {
                 <button
                     key={value}
                     onClick={() => handleAnswerSelect(value)}
-                    className={`w-full text-left p-4 border-2 rounded-lg transition-all duration-200 flex items-center ${
-                        selectedAnswer === value
-                        ? 'bg-amber-500 border-amber-400 text-black shadow-lg scale-105'
-                        : 'bg-gray-800 border-gray-600 hover:bg-gray-700 hover:border-amber-400'
-                    }`}
+                    className="w-full text-left p-4 border-2 rounded-lg transition-all duration-200 flex items-center bg-gray-800 border-gray-600 hover:bg-gray-700 hover:border-amber-400 hover:scale-105"
                 >
-                    <span className={`font-bold text-xl mr-4 w-6 text-center ${selectedAnswer === value ? 'text-black' : 'text-amber-400'}`}>{value}</span>
+                    <span className="font-bold text-xl mr-4 w-6 text-center text-amber-400">{value}</span>
                     <div>
-                        <span className={`font-semibold ${selectedAnswer === value ? 'text-black' : 'text-white'}`}>{label}</span>
-                        <span className={`text-sm ml-2 ${selectedAnswer === value ? 'text-gray-800' : 'text-gray-400'}`}>({description})</span>
+                        <span className="font-semibold text-white">{label}</span>
+                        <span className="text-sm ml-2 text-gray-400">({description})</span>
                     </div>
                 </button>
             ))}
         </div>
-
-        <button 
-            onClick={handleNext} 
-            disabled={selectedAnswer === null}
-            className="w-full bg-amber-500 text-gray-900 font-bold py-4 px-4 rounded-md hover:bg-amber-400 disabled:bg-gray-600 disabled:cursor-not-allowed disabled:text-gray-400 transition-all duration-300 transform hover:scale-105 text-lg"
-        >
-            {currentQuestionIndex < quizQuestions.length - 1 ? 'Próxima Pergunta' : 'Finalizar Teste'}
-        </button>
     </div>
   );
 };
