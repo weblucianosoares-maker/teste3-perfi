@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import LandingForm from './components/LandingForm';
 import Quiz from './components/Quiz';
 import ResultPage from './components/ResultPage';
+import Footer from './components/Footer';
 import { AppContext } from './context/AppContext';
 import type { UserData, Answer } from './types';
 import { ViewState, ProfileName } from './types';
@@ -111,8 +112,11 @@ const App: React.FC = () => {
 
   return (
     <AppContext.Provider value={contextValue}>
-      <div className="text-white min-h-screen font-sans flex flex-col items-center justify-center p-4 selection:bg-white selection:text-[#4568DC]">
-        {renderContent()}
+      <div className="text-white min-h-screen font-sans flex flex-col p-4 selection:bg-white selection:text-[#4568DC]">
+        <main className="flex-grow flex flex-col items-center justify-center w-full">
+            {renderContent()}
+        </main>
+        <Footer />
       </div>
     </AppContext.Provider>
   );

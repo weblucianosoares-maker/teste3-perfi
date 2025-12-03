@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAppContext } from '../hooks/useAppContext';
 import type { UserData } from '../types';
 import { OCCUPATION_OPTIONS, INCOME_OPTIONS, SITUATION_OPTIONS } from '../constants';
+import Logo from './Logo';
 
 const LandingForm: React.FC = () => {
   const { startQuiz } = useAppContext();
@@ -42,7 +43,8 @@ const LandingForm: React.FC = () => {
   const labelClasses = "block text-sm font-medium text-gray-200 mb-2";
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto py-8">
+        <Logo />
         <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Descubra seu <span className="font-extrabold">Perfil Emocional Financeiro</span></h1>
             <p className="mt-4 text-lg text-gray-200">Entenda como suas emoções influenciam suas decisões financeiras e transforme sua vida.</p>
@@ -110,7 +112,7 @@ const LandingForm: React.FC = () => {
                 </div>
                 {error && <p className="text-red-300 text-sm text-center">{error}</p>}
                 <div className="pt-4">
-                    <button type="submit" className="w-full bg-white text-[#4568DC] font-bold py-4 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white transition duration-300 ease-in-out transform hover:scale-105 text-lg">
+                    <button type="submit" className="w-full bg-green-600 text-white font-bold py-4 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white transition duration-300 ease-in-out transform hover:scale-105 text-lg">
                         INICIAR TESTE
                     </button>
                 </div>

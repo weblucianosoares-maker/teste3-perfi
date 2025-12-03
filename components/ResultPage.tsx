@@ -45,7 +45,7 @@ const ResultQualified: React.FC = () => {
     if (!userData || !profileDetails) return null;
 
     return (
-        <div className="w-full max-w-4xl mx-auto">
+        <div className="w-full max-w-4xl mx-auto py-8">
             <ResultHeader name={userData.name} profileDetails={profileDetails} />
 
             {/* Sales Page Section */}
@@ -103,14 +103,13 @@ const ResultQualified: React.FC = () => {
                 </section>
 
                 {/* Dobra 4 */}
-                <section className="bg-black/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/20 flex flex-col md:flex-row items-center gap-8">
-                    <img src="/AdrianaJuwer.jpg" alt="Adriana Juwer" className="w-48 h-48 rounded-full object-cover border-4 border-white flex-shrink-0" />
+                <section className="bg-black/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/20 text-center">
                     <div>
                         <h3 className="text-xl font-semibold text-gray-200">Quem vai conduzir sua sessão:</h3>
                         <h2 className="text-4xl font-bold text-white mt-1">Adriana Juwer</h2>
-                        <p className="mt-4 text-lg text-gray-200">Mentora, consultora e especialista em Inteligência Emocional Financeira pela Panther Consultoria. Ela une ciência, educação e tecnologia para transformar sua relação com o dinheiro.</p>
-                        <p className="mt-4 text-gray-300">Adriana ajuda funcionários públicos, gerentes, diretores, executivos e empresários, pessoas que GANHAM BEM, mas que continuam presas emocionalmente a padrões que drenam a prosperidade.</p>
-                         <div className="mt-8 flex justify-start">
+                        <p className="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">Mentora, consultora e especialista em Inteligência Emocional Financeira pela Panther Consultoria. Ela une ciência, educação e tecnologia para transformar sua relação com o dinheiro.</p>
+                        <p className="mt-4 text-gray-300 max-w-3xl mx-auto">Adriana ajuda funcionários públicos, gerentes, diretores, executivos e empresários, pessoas que GANHAM BEM, mas que continuam presas emocionalmente a padrões que drenam a prosperidade.</p>
+                         <div className="mt-8 flex justify-center">
                             <CTAButton>Quero falar com a Adriana</CTAButton>
                         </div>
                     </div>
@@ -144,7 +143,7 @@ const ResultDisqualified: React.FC = () => {
     if (!userData || !profileDetails) return null;
     
     return (
-        <div className="w-full max-w-4xl mx-auto">
+        <div className="w-full max-w-4xl mx-auto py-8">
              <ResultHeader name={userData.name} profileDetails={profileDetails} />
         </div>
     );
