@@ -1,4 +1,3 @@
-
 export enum ViewState {
   LANDING = 'LANDING',
   QUIZ = 'QUIZ',
@@ -38,4 +37,7 @@ export enum ProfileName {
 export interface ProfileDetail {
   title: ProfileName;
   description: string;
+  influence: string;
+  risks: string[];
+  opportunities: string[];
 }

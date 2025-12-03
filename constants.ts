@@ -1,4 +1,3 @@
-
 import type { QuizQuestion, ProfileDetail } from './types';
 import { ProfileName } from './types';
 
@@ -57,17 +56,29 @@ export const profileDetails: Record<ProfileName, ProfileDetail> = {
   [ProfileName.Equilibrado]: {
     title: ProfileName.Equilibrado,
     description: 'Você tem uma relação saudável e consciente com o dinheiro. Sente-se seguro(a) para tomar decisões financeiras e mantém um bom planejamento, mesmo diante de emoções. Sabe lidar com imprevistos sem se desesperar, o que contribui para sua estabilidade financeira e emocional.',
+    influence: "Seu equilíbrio emocional permite que você tome decisões financeiras com clareza e propósito. Você não é facilmente abalado por impulsos ou medos, o que significa que suas escolhas financeiras estão alinhadas com seus objetivos de longo prazo, em vez de reações momentâneas.",
+    risks: ["Excesso de confiança, que pode levar a subestimar riscos em investimentos.", "Racionalidade excessiva, ignorando a intuição em momentos importantes.", "Dificuldade em se permitir 'gastos por prazer' sem culpa, tornando-se rígido demais."],
+    opportunities: ["Construir riqueza de forma consistente e segura.", "Alcançar a independência financeira com mais rapidez e tranquilidade.", "Servir de exemplo e ajudar outras pessoas a melhorarem sua relação com o dinheiro."]
   },
   [ProfileName.EmocionalmenteSensivel]: {
     title: ProfileName.EmocionalmenteSensivel,
     description: 'Você percebe as emoções influenciando suas decisões financeiras, mas já busca controlar melhor seus gastos e planejar seu orçamento. Com um pouco mais de atenção às emoções e estratégias para lidar com elas, pode alcançar mais equilíbrio e segurança.',
+    influence: "Sua sensibilidade faz com que o estado emocional do momento tenha um peso grande em suas decisões. Em dias bons, você pode ser otimista e gastar mais. Em dias ruins, a ansiedade pode paralisar decisões importantes, criando um ciclo de instabilidade financeira.",
+    risks: ["Tomar decisões de investimento baseadas em euforia ou pânico.", "Procrastinar o planejamento financeiro por sentir-se sobrecarregado pelas emoções.", "Usar o dinheiro como uma ferramenta para regular o humor (compras para se sentir melhor)."],
+    opportunities: ["Desenvolver uma profunda autoconsciência sobre seus gatilhos emocionais.", "Usar a empatia para entender e negociar melhor em situações financeiras.", "Transformar a sensibilidade em intuição para identificar boas oportunidades quando aliada à análise."]
   },
   [ProfileName.Impulsivo]: {
     title: ProfileName.Impulsivo,
     description: 'Suas emoções frequentemente guiam suas escolhas financeiras, o que pode levar a gastos não planejados e dificuldades em poupar. É importante desenvolver consciência dos gatilhos emocionais e adotar ferramentas para evitar decisões precipitadas.',
+    influence: "Sua impulsividade significa que a recompensa imediata muitas vezes vence o planejamento de longo prazo. O gatilho emocional (estresse, alegria, tédio) leva diretamente à ação (gastar), sem um filtro racional, o que compromete a construção de patrimônio e a segurança financeira.",
+    risks: ["Acumular dívidas de cartão de crédito e entrar no cheque especial.", "Dificuldade extrema em poupar e investir para o futuro.", "Sentimento de arrependimento e culpa após compras, gerando mais estresse emocional."],
+    opportunities: ["Aprender a canalizar a energia do impulso para metas financeiras motivadoras.", "Criar sistemas (como débitos automáticos para investimentos) que 'enganem' a impulsividade a seu favor.", "Desenvolver disciplina e autocontrole que transbordarão para outras áreas da vida."]
   },
   [ProfileName.AnsiosoEvitativo]: {
     title: ProfileName.AnsiosoEvitativo,
     description: 'O medo e a ansiedade relacionados ao dinheiro impactam fortemente suas decisões financeiras. Você pode evitar lidar com finanças ou sentir-se paralisado(a) para agir. Buscar suporte emocional e financeiro pode ajudar a construir segurança e controle.',
+    influence: "O medo e a ansiedade criam uma barreira entre você e o dinheiro. Você evita olhar o extrato, fazer o orçamento ou planejar o futuro porque isso dispara gatilhos de desconforto. Essa evitação impede que você tome as rédeas da sua vida financeira, deixando-a à deriva.",
+    risks: ["Perder o controle sobre as finanças por não saber para onde o dinheiro está indo.", "Deixar de aproveitar oportunidades de investimento por medo de perder.", "Manter o dinheiro em opções de baixo rendimento (como a poupança) por receio de arriscar."],
+    opportunities: ["Buscar conhecimento financeiro como ferramenta para reduzir a ansiedade e ganhar confiança.", "Começar com pequenos passos (organizar uma conta, fazer um pequeno investimento) para construir segurança.", "Transformar o medo em prudência, tornando-se um investidor cauteloso e consciente."]
   },
 };

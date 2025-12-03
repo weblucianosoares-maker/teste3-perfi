@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import LandingForm from './components/LandingForm';
 import Quiz from './components/Quiz';
@@ -112,7 +111,7 @@ const App: React.FC = () => {
 
   return (
     <AppContext.Provider value={contextValue}>
-      <div className="bg-[#0A192F] text-gray-200 min-h-screen font-sans flex flex-col items-center justify-center p-4 selection:bg-amber-500 selection:text-black">
+      <div className="text-white min-h-screen font-sans flex flex-col items-center justify-center p-4 selection:bg-white selection:text-[#4568DC]">
         {renderContent()}
       </div>
     </AppContext.Provider>
