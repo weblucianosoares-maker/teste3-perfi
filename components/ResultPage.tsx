@@ -3,7 +3,7 @@ import { useAppContext } from '../hooks/useAppContext';
 import type { ProfileDetail } from '../types';
 
 const CTAButton: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => (
-    <a href="#" className={`block w-full sm:w-auto text-center bg-white text-[#4568DC] font-bold py-4 px-8 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#4568DC] focus:ring-white transition duration-300 ease-in-out transform hover:scale-105 text-lg ${className}`}>
+    <a href="https://cal.com/adriana-juwer-dir4cd/60min" target="_blank" rel="noopener noreferrer" className={`block w-full sm:w-auto text-center bg-white text-[#4568DC] font-bold py-4 px-8 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#4568DC] focus:ring-white transition duration-300 ease-in-out transform hover:scale-105 text-lg ${className}`}>
         {children}
     </a>
 );
@@ -54,20 +54,21 @@ const ResultQualified: React.FC = () => {
                 {/* Dobra 1 */}
                 <section className="text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white">Você descobriu seu Perfil Emocional Financeiro. Agora é hora de descobrir como virar esse jogo.</h2>
-                    <p className="mt-6 text-xl text-gray-200 max-w-3xl mx-auto">Você ganha acima da média, trabalha duro, produz, entrega resultado — mas suas finanças continuam presas num padrão que não faz sentido para o seu nível profissional.</p>
+                    <p className="mt-6 text-xl text-gray-200 max-w-3xl mx-auto">Você ganha acima da média, trabalha duro, produz, entrega resultado, mas suas finanças continuam presas num padrão que não faz sentido para o seu nível profissional.</p>
                     <p className="mt-4 text-xl font-semibold text-white max-w-3xl mx-auto">E aqui vai a verdade que quase ninguém fala: <span className="font-extrabold">Não é falta de renda. É falta de clareza emocional.</span></p>
-                    <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">Você acabou de responder um teste que revela, com precisão cirúrgica, como suas emoções moldam suas decisões com dinheiro — mesmo quando você acredita que é racional. Esse padrão pode ser ajustado. E quando ele muda, TODO o resto muda junto.</p>
-                    <div className="mt-10 flex justify-center">
+                    <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">Você acabou de responder um teste que revela, com precisão cirúrgica, como suas emoções moldam suas decisões com dinheiro, mesmo quando você acredita que é racional. Esse padrão pode ser ajustado. E quando ele muda, TODO o resto muda junto.</p>
+                    <p className="mt-8 text-base text-gray-300 italic">Sua sessão é 100% individual e sigilosa. Dê o primeiro passo com total segurança.</p>
+                    <div className="mt-6 flex justify-center">
                         <CTAButton>Quero desbloquear meu padrão emocional</CTAButton>
                     </div>
                 </section>
 
                 {/* Dobra 2 */}
                 <section className="text-center bg-black/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/20">
-                    <h2 className="text-3xl font-bold text-white">Você pode reorganizar sua vida financeira <span className="font-extrabold">sem ganhar 1 real a mais</span> — apenas mudando o padrão emocional que sabota suas decisões.</h2>
+                    <h2 className="text-3xl font-bold text-white">Você pode reorganizar sua vida financeira <span className="font-extrabold">sem ganhar 1 real a mais</span>, apenas mudando o padrão emocional que sabota suas decisões.</h2>
                     <p className="mt-6 text-lg text-gray-200">O que está travando sua evolução não está no extrato bancário. Está nos gatilhos emocionais que definem como você gasta, como você guarda, como você decide.</p>
                     <p className="mt-6 text-xl font-bold text-white">Pessoas de alta renda têm problemas financeiros sofisticados. E problemas sofisticados exigem soluções sofisticadas.</p>
-                    <p className="mt-4 text-lg text-gray-300">Planilha não resolve. Cortar cafezinho não resolve. “Fazer renda extra” não resolve. O que resolve é desmontar o padrão emocional que te leva a repetir o mesmo ciclo — mês após mês — mesmo sabendo exatamente “o que deveria fazer”.</p>
+                    <p className="mt-4 text-lg text-gray-300">Planilha não resolve. Cortar cafezinho não resolve. “Fazer renda extra” não resolve. O que resolve é desmontar o padrão emocional que te leva a repetir o mesmo ciclo, mês após mês, mesmo sabendo exatamente “o que deveria fazer”.</p>
                     <p className="mt-6 text-lg text-gray-200">Na Sessão de Alinhamento Emocional Financeiro, você vai finalmente entender <span className="font-bold">O PORQUÊ</span> do padrão, e <span className="font-bold">O COMO</span> sair dele.</p>
                     <div className="mt-10 flex justify-center">
                         <CTAButton>Quero minha Sessão de Alinhamento</CTAButton>
@@ -108,7 +109,7 @@ const ResultQualified: React.FC = () => {
                         <h3 className="text-xl font-semibold text-gray-200">Quem vai conduzir sua sessão:</h3>
                         <h2 className="text-4xl font-bold text-white mt-1">Adriana Juwer</h2>
                         <p className="mt-4 text-lg text-gray-200">Mentora, consultora e especialista em Inteligência Emocional Financeira pela Panther Consultoria. Ela une ciência, educação e tecnologia para transformar sua relação com o dinheiro.</p>
-                        <p className="mt-4 text-gray-300">Adriana ajuda funcionários públicos, gerentes, diretores, executivos e empresários — pessoas que GANHAM BEM, mas que continuam presas emocionalmente a padrões que drenam a prosperidade.</p>
+                        <p className="mt-4 text-gray-300">Adriana ajuda funcionários públicos, gerentes, diretores, executivos e empresários, pessoas que GANHAM BEM, mas que continuam presas emocionalmente a padrões que drenam a prosperidade.</p>
                          <div className="mt-8 flex justify-start">
                             <CTAButton>Quero falar com a Adriana</CTAButton>
                         </div>
@@ -122,7 +123,15 @@ const ResultQualified: React.FC = () => {
                     <div className="mt-10 flex justify-center">
                         <CTAButton className="w-full md:w-auto">Quero minha Sessão de Alinhamento Emocional Financeiro</CTAButton>
                     </div>
-                    <p className="mt-8 text-sm text-gray-400 max-w-2xl mx-auto italic">A sessão é individual, sigilosa e 100% personalizada com base no seu teste. Você vai sair com clareza, direção e um plano emocional-financeiro aplicável imediatamente.</p>
+                    <div className="mt-12 bg-black/20 border-2 border-white/30 rounded-2xl p-8 max-w-3xl mx-auto shadow-lg text-center">
+                        <div className="flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
+                            </svg>
+                            <h3 className="text-xl font-bold text-white ml-3">Compromisso com sua Privacidade</h3>
+                        </div>
+                        <p className="mt-4 text-base text-gray-200">A sessão é individual, sigilosa e 100% personalizada com base no seu teste. Você vai sair com clareza, direção e um plano emocional-financeiro aplicável imediatamente.</p>
+                    </div>
                 </section>
 
             </div>
